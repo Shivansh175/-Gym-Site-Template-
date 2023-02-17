@@ -1,0 +1,207 @@
+:root{
+    --one:294px;
+    --two:800px;
+    --three:110px;
+}
+header::before {
+    background: url("../IMAGES/abs-1850926_1920.jpg") no-repeat;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 170vh;
+    z-index: -1;
+  }
+  body {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    height: 155vh;
+  }
+  .left {
+    font-family: ubuntu;
+    position: absolute;
+    left: 20px;
+    top: 29px;
+    display: inline-block;
+  }
+  .left img {
+    width: 60px;
+  }
+  #unique:hover{
+    scale: 1.1;
+  }
+  .mid {
+    border: 2px solid white;
+    padding: 0px;
+    display: block;
+    width: 39%;
+    margin: 34px auto;
+    border-radius: 6px;
+    font-weight: bold;
+    background-color: rgb(0 0 0 / 31%);
+  }
+  .right {
+    position: absolute;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    top: 28px;
+    right: 18px;
+    border-radius: 6px;
+    background-color: rgb(136 57 23 / 58%);
+    display: inline-block;
+    padding: 12px 12px;
+    font-size: 25px;
+  }
+  .right:hover {
+    cursor: pointer;
+    background-color: rgba(88, 37, 16, 0.58);
+  }
+  .navbar {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+  }
+  .navbar li {
+    font-size: 18px;
+    display: inline-block;
+    padding-right: 58px;
+  }
+  .navbar li a,
+  .right a,
+  .left a {
+    color: white;
+    text-decoration: none;
+  }
+  .navbar li a:hover {
+    color: rgba(213, 232, 70, 0.786);
+  }
+  div.name {
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 18px;
+  }
+  .container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
+    border: 2px solid white;
+    /* transition-property: all;
+    transition: 2s; */
+    position: absolute;
+    border-radius: 17px;
+    padding: 38px;
+    font-family: ubuntu;
+  }
+  #one {
+    /* text-align: center; */
+    /* display: inline-block; */
+    /* position: absolute; */
+
+    top: 240px;
+    left: 114px;
+    width: 36%;
+    height: 40%;
+    background-color: #460a414d;
+    /* font-size: 26px; */
+  }
+  
+  #two {
+    /* display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid white;
+    text-align: center; */
+    /* display: inline-block; */
+
+    top: 303px;
+    left: 873px;
+    width: 28%;
+    height: 90%;
+    background-color: #4e41104d;
+    /* font-size: 26px; */
+  }
+  #three {
+    /* display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid white;
+    text-align: center;
+     display: inline-block; 
+    position: absolute; */
+    top: 770px;
+    left: 114px;
+    width: 36%;
+    height: 35%;
+    background-color: #0f39104d;
+    /* font-size: 26px; */
+  }
+  #one p{
+    animation-name: shivansh1;
+    animation-duration: 20s;
+  }
+  #two p{
+    animation-name: shivansh2;  
+    animation-duration: 45s;  
+  }
+  #three p{
+    animation-name: shivansh3;
+    animation-duration: 15s;
+    
+  }
+  .container p{
+    /* transition-property: overflow;
+    transition: 1s; */
+    position: relative;
+    /* animation-name: shivansh; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  @keyframes shivansh3 {
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: var(--three);
+    }
+
+  }
+    @keyframes shivansh1 {
+        0%{
+            bottom: 0;
+        }
+        100%{
+            bottom: var(--one);
+        }
+    }
+    @keyframes shivansh2 {
+        0%{
+            bottom: 0;
+        }
+        100%{
+            bottom: var(--two);
+        }
+    }
+  .P{
+    /* animation-name: shivansh;
+    animation-timing-function: ease-in;
+    animation-duration: 2s; */
+    overflow: hidden;
+  }
+  /* .container:hover{
+    scale: 1.08;
+  } */
+  .container p:hover{
+    /* transform: translateY(-50px); */
+
+    animation-play-state: paused; 
+  }
